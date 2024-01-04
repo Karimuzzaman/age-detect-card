@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-secondary-subtle" id="navbarTogglerDemo01">
+                <a class="navbar-brand mx-auto" href="#">Age Calculator</a>
+                <ul class="navbar-nav  mb-2 mb-lg-0 mx-auto p-lg-4    fs-5 fw-semibold">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Banner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">Footer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- card section starts -->
+    <div class="row container-fluid gap-3 mx-auto my-3">
+        <div id="adult" class="card col-lg bg-secondary">
+            <img src="./images/adult.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Age Detector</h5>
+                <p class="card-text">Congratulation!!! Your age is equal to or above 18. So you are an adult.</p>
+            </div>
+        </div>
+        <div id="child" class="card col-lg bg-secondary">
+            <img src="./images/child.jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+                <h5 class="card-title">Age Detector</h5>
+                <p class="card-text">Opps!!! Your age is less than 18. So you are a child.</p>
+            </div>
+        </div>
+    </div>
+    <!-- card section ends -->
+
+    <!-- Banner section starts -->
+    <section class="container-fluid">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="./images/bg.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-6 bg-secondary">
+                    <div class="card-body">
+                        <h5 class="card-title">Enter Your Age</h5>
+                        <div class="d-flex justify-content-center">
+                            <label for="Age"></label>
+                            <input id="input-age" type="text" style="border: 1px solid lightblue; border-radius: 5px;"
+                                required>
+                            <button onclick="calculateAge()" type="button" class="btn btn-success ms-2">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Banner section ends -->
+
+    <!-- Footer section starts -->
+    <div class="border border-dark-subtle mb-2 rounded-3 container-fluid   bg-success-subtle">
+        <br>
+        <p class="text-center fs-5 my-auto">2024 copyright goes to Team Ostad.</p>
+        <br>
+    </div>
+
+    <!-- Footer section ends -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
